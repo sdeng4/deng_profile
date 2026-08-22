@@ -20,6 +20,7 @@ function Navbar() {
         <a href="https://github.com/sdeng4" target="_blank">
           GitHub
         </a>
+        <a href="">Other</a>
         <button onClick={()=>setShowLogin(true)}>Login</button>
       </nav>
     </header>
