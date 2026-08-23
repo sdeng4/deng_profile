@@ -1,0 +1,149 @@
+.experience-section {
+  padding: 90px 12% 110px;
+  background-color: #f7f4f0;
+}
+
+.experience-header {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 48px;
+}
+
+.experience-number,
+.experience-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #c66b3d;
+}
+
+.experience-line {
+  height: 1px;
+  background-color: #ded8d2;
+}
+
+.experience-list {
+  position: relative;
+}
+
+.experience-list::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  bottom: 12px;
+
+  width: 1px;
+  background-color: #ded8d2;
+}
+
+.experience-item {
+  position: relative;
+  padding-left: 42px;
+  margin-bottom: 38px;
+}
+
+.experience-dot {
+  position: absolute;
+  left: 0;
+  top: 28px;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+  background-color: #c66b3d;
+}
+
+.experience-card {
+  padding: 28px 30px;
+
+  border: 1px solid #ded8d2;
+  background-color: #fff;
+}
+
+.experience-title {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.experience-title h3 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 600;
+
+  color: #1f1a17;
+}
+
+.experience-title span {
+  color: #c66b3d;
+  font-size: 14px;
+}
+
+.experience-meta {
+  display: flex;
+  gap: 18px;
+
+  margin-top: 10px;
+
+  font-size: 13px;
+  color: #817a74;
+}
+
+.experience-card p {
+  margin: 20px 0 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: #746d67;
+}
+
+@media (max-width: 800px) {
+  .experience-section {
+    padding: 70px 8%;
+  }
+
+  .experience-meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.experience-selector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.experience-selector button {
+  padding: 9px 16px;
+
+  border: 1px solid #ded8d2;
+  border-radius: 5px;
+
+  background-color: transparent;
+  color: #746d67;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.experience-selector button:hover {
+  border-color: #c66b3d;
+  color: #c66b3d;
+}
+
+.experience-selector button.active {
+  background-color: #1f1a17;
+  border-color: #1f1a17;
+  color: white;
+}
