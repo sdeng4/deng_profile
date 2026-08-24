@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './Navbar.css'
+import logo from '../../assets/SDlogo.png'
 
 function Navbar() {
   return (
     <>
     <header className="navbar">
       <div className="navbar-logo">
-        SD
+        <img src={logo} alt="SD logo"/>
       </div>
 
       <nav className="navbar-links">
