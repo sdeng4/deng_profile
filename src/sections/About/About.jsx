@@ -1,7 +1,8 @@
 import './About.css'
+import aboutImage from '../../assets/about.png'
 
 function About(){
-    const skills=['HTML','REACT','JAVASCRIPT','CSS','NOPE.JS'];
+    const skills=['HTML','REACT','JAVASCRIPT','CSS','NODE.JS'];
 
     return(
         <section id="about" className='about-section'>
@@ -13,7 +14,7 @@ function About(){
 
             <div className='about-content'>
                 <div className='about-image'>
-                    <div className='about-image-placeholder'>Image</div>
+                    <img src={aboutImage} alt="About"/>
                 </div>
             
 
@@ -30,7 +31,7 @@ function About(){
                     </p>
 
                     <div className='about-skills'>
-                        <p className='skills-label'>SKILL</p>
+                        <p className='skills-label'>SKILLS</p>
                         <div className='skills-list'>
                             {skills.map((skill) => (
                                 <span key={skill} className="skill-tag">
