@@ -13,10 +13,16 @@
 }
 
 .navbar-logo {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 22px;
-  font-weight: 600;
-  color: #1f1a17;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
 }
 
 .navbar-links {
