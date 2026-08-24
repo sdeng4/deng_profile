@@ -33,6 +33,24 @@ function Education() {
             Coursework and projects focused on software development,
             database systems, artificial intelligence, and software design.
           </p>
+
+          <div className="education-activity">
+            <span className="education-detail-label">
+                ACADEMIC EXPERIENCE
+            </span>
+
+            <h4>Motion Capture Project</h4>
+
+            <p className="education-tools">
+                Vicon · MotionBuilder
+            </p>
+
+            <p>
+                Participated in motion capture experiments using Vicon and
+                MotionBuilder to capture human movement and create virtual
+                character animations.
+            </p>
+            </div>
         </div>
       </div>
     </section>
