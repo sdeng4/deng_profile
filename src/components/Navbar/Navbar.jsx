@@ -1,10 +1,7 @@
 import { useState } from 'react'
-import LoginModal from '../LoginModal/LoginModal'
 import './Navbar.css'
 
 function Navbar() {
-  const [showLogin, setShowLogin] = useState(false)
-
   return (
     <>
     <header className="navbar">
@@ -21,13 +18,8 @@ function Navbar() {
           GitHub
         </a>
         <a href="">Other</a>
-        <button onClick={()=>setShowLogin(true)}>Login</button>
       </nav>
     </header>
-
-    {showLogin && (
-      <LoginModal onClose={() => setShowLogin(false)} />
-    )}
     </>
   )
 }
