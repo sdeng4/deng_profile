@@ -1,18 +1,24 @@
 import './Projects.css'
+import postOfficeImage from '../../assets/post_office.png'
+import queueImage from '../../assets/queue.png'
 
 function Projects() {
   const projects = [
     {
-      title: 'QueueSmart',
+      title: 'QueueSmart (Class Project)',
       tech: ['React', 'Node.js', 'Prisma', 'SQLite'],
       description:
-        'A queue management application with admin service management, queue controls, reporting, and wait-time functionality.'
+        'A queue management application with admin service management, queue controls, reporting, and wait-time functionality.',
+      image: queueImage,
+      link: null
     },
     {
-      title: 'Post Office Web Application',
+      title: 'Post Office Web Application (Class Project)',
       tech: ['React', 'SQL', 'JavaScript'],
       description:
-        'A course project focused on web application development and database functionality.'
+        'A course project focused on web application development and database functionality.',
+      image:postOfficeImage,
+      link:'https://post-office-project-2024.vercel.app/'
     }
   ]
 
@@ -28,7 +34,20 @@ function Projects() {
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
             <div className="project-image">
-              Project Image
+                {project.image ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={project.image}
+                      alt={`${project.title} preview`}
+                    />
+                  </a>
+                ) : (
+                  <span>Project Image</span>
+                )}
             </div>
 
             <div className="project-content">

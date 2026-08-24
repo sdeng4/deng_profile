@@ -11,7 +11,7 @@ function Experience() {
       location: 'Guangzhou, China',
       period: 'Jan 2015 - Aug 2016',
       description:
-        'Provided answers to customer inquiries and resolved issues through phone, online platforms, and email. Identified duplicate issues and triggered fault alarms when needed.'
+        'Provided customer support through phone, online platforms, and email. Identified recurring and duplicate issues, documented problems, and escalated system-related issues when necessary.'
     },
     {
       company: 'JOYY INC',
@@ -25,12 +25,12 @@ function Experience() {
 
   const restaurantExperiences = [
     {
-      company: 'Restaurant',
-      role: 'Server',
+      company: 'Various Restaurants',
+      role: 'Customer Service Associate',
       location: 'Houston, TX',
       period: '2024 - 2026',
       description:
-        'Provided customer service in a fast-paced restaurant environment, handled multiple customer requests simultaneously, and collaborated with team members to ensure efficient service.'
+        'Provided customer service, handled orders and payments, supported daily restaurant operations, and collaborated with team members in fast-paced environments while working part-time during school.'
     }
   ]
 

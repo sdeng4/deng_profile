@@ -44,6 +44,23 @@
 
   background-color: #e8e1da;
   color: #8e8177;
+
+  overflow: hidden;
+}
+
+.project-image a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.project-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 }
 
 .project-content {
