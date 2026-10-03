@@ -1,6 +1,7 @@
 import './Projects.css'
 import postOfficeImage from '../../assets/post_office.png'
 import queueImage from '../../assets/queue.png'
+import LoopTickImage from '../../assets/LoopTick.png'
 
 function Projects() {
   const projects = [
@@ -19,6 +20,14 @@ function Projects() {
         'A course project focused on web application development and database functionality.',
       image:postOfficeImage,
       link:'https://post-office-project-2024.vercel.app/'
+    },
+    {
+      title: 'LoopTick',
+      tech: ['React', 'SupaSQL', 'JavaScript'],
+      description:
+        'A customizable countdown app for recurring monthly and yearly events.',
+      image:LoopTickImage,
+      link:'https://loop-tick.vercel.app/'
     }
   ]
 
